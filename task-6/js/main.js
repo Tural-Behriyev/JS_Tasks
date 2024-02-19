@@ -29,14 +29,7 @@
 // }
 // console.log("Amount of money you earned: " + prize + " manat.");
 
-
-
-
 // ------------------------------------------------ ------------------------------------------------- -----------------
-
-
-
-
 
 // TASK2
 
@@ -48,13 +41,7 @@
 // }
 // console.log("Sum of entered numbers:", total);
 
-
-
-
 // ------------------------------------------------ ------------------------------------------------- -----------------
-
-
-
 
 // TASK3
 
@@ -68,13 +55,7 @@
 //   console.log(line);
 // }
 
-
-
-
 // ------------------------------------------------ ------------------------------------------------- -----------------
-
-
-
 
 // TASK4
 
@@ -86,14 +67,7 @@
 // }
 // console.log("factorial :", factorial );
 
-
-
-
-
 // ------------------------------------------------ ------------------------------------------------- -----------------
-
-
-
 
 // Tapşırıq-02
 
@@ -102,14 +76,7 @@
 //   console.log("Mən sikllərdən necə istifadə edəcəyimi bilirəm");
 // }
 
-
-
-
-
 // ------------------------------------------------ ------------------------------------------------- -----------------
-
-
-
 
 // Task-03
 
@@ -119,15 +86,7 @@
 //     }
 // }
 
-
-
-
-
 // ------------------------------------------------ ------------------------------------------------- -----------------
-
-
-
-
 
 // Task-04
 
@@ -137,16 +96,58 @@
 // }
 // console.log(cem);
 
+// ------------------------------------------------ ------------------------------------------------- -----------------
 
+// others;
 
+// 1
 
-
+// function yonTap(istiqamet) {
+//   let istiqametler = {
+//     up: "Yuxarı get",
+//     right: "Sağa get",
+//     down: "Aşağı get",
+//     left: "Sola get",
+//   };
+//   for (let yon in istiqametler) {
+//     if (istiqamet === yon) {
+//       console.log(istiqametler[yon]);
+//       return;
+//     }
+//   }
+//   console.log("Yanlış istiqamət daxil edildi.");
+// }
+// let istiqamet = prompt("İstiqaməti daxil edin (up/right/down/left): ");
+// yonTap(istiqamet);
 
 // ------------------------------------------------ ------------------------------------------------- -----------------
 
+// 2
 
+// function calculateBMI(weight, height) {
+//   return weight / (height * height);
+// }
+// function interpretBMI(bmi) {
+//   if (bmi < 18.5) {
+//     return "BMI-si azdir, ariqdir.";
+//   } else if (bmi < 25) {
+//     return " BMI-si normal beden olcusune sahibdir";
+//   } else if (bmi < 30) {
+//     return "BMI-si kokdur";
+//   } else {
+//     return "obesdir";
+//   }
+// }
+// const numPeople = +prompt("Neçə insanın BMI hesablamaq istəyirsiniz?");
+// for (let i = 1; i <= numPeople; i++) {
+//   const weight = +prompt(`${i} Kilo (kq) ilə çəki daxil edin:`);
+//   const height = +prompt(`${i} Hündürlüyü metrlə (m) daxil edin:`);
+//   const bmi = calculateBMI(weight, height);
+//   const interpretation = interpretBMI(bmi);
+//   console.log(`${i} - BMI: ${bmi.toFixed(2)}: ${interpretation}`);
+// }
 
-
+// ------------------------------------------------ ------------------------------------------------- -----------------
 
 // Tapşırıq-05
 
@@ -163,13 +164,7 @@
 //     console.log(`${number} the sum of all three terms into which the term is divided is: ${sum}`);
 // }
 
-
-
-
 // ------------------------------------------------ ------------------------------------------------- -----------------
-
-
-
 
 // Tapşırıq-07
 
@@ -181,13 +176,9 @@
 // }
 // console.log(hasil);
 
-
-
 // ------------------------------------------------ ------------------------------------------------- -----------------
 
-
-
-// Tapşırıq-09
+// Task-09
 
 // let metn = "Bu bir mətndir.";
 // let ilkIndeks = -1;
@@ -200,3 +191,7 @@
 // }
 // console.log("İlk indeks: " + ilkIndeks);
 
+let num = '9.81'
+let numFloat = parseFloat(num)
+
+console.log(numFloat) // 9.81
