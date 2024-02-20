@@ -35,39 +35,7 @@
 
 // Tapşırıq - 03;
 
-// class Person {
-//   constructor(name, age, retirementAge) {
-//     this.name = name;
-//     this.age = age;
-//     this.retirementAge = retirementAge;
-//   }
-//   setAge(newAge) {
-//     this.age = newAge;
-//   }
-//   getYearsBeforeRetirement() {
-//     const yearsLeft = this.retirementAge - this.age;
-//     if (yearsLeft > 0) {
-//       return yearsLeft;
-//     } else {
-//       return 'Zaten emekli oldunuz!';
-//     }
-//   }
-// }
-// const person1 = new Person('John', 40, 65);
-// person1.setAge(50);
-// console.log(person1.getYearsBeforeRetirement());
-
-
-
-
-
-/////////////////////////////////////////////////////////////////////////////
-
-
-
-// Tapşırıq - 04;*******************************
-
-// const person = {
+// let person = {
 //   name: "John",
 //   age: 30,
 //   retirementAge: 65,
@@ -92,13 +60,11 @@
 
 
 
-
 /////////////////////////////////////////////////////////////////////////////
 
 
 
-
-// Tapşırıq - 05;
+// Tapşırıq - 04;
 
 // let kalkulyator = {
 //     toplama: function(x, y) {
@@ -123,7 +89,3 @@
 // console.log("Vurma: " + kalkulyator.vurma(5, 3));
 // console.log("Bölmə: " + kalkulyator.bolme(10, 2));
 // console.log("Bölmə: " + kalkulyator.bolme(5, 0));
-
-
-
-/////////////////////////////////////////////////////////////////////////////
