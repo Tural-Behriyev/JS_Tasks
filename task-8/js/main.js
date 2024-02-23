@@ -7,31 +7,21 @@
 // };
 // console.log("Doğum tarihi: " + user.birthday);
 
-
-
 /////////////////////////////////////////////////////////////////////////////
-
-
-
+debugger;
 // Tapşırıq - 02;
 
 // const istifadeci = {
 //   ad: "John",
 //   soyad: "Doe",
 //   yas: 25,
-//   dogum_tarixi: "1999-05-15"
+//   dogum_tarixi: "1999-05-15",
 // };
 // istifadeci.yas += 1;
 // delete istifadeci.dogum_tarixi;
 // console.log(istifadeci);
 
-
-
-
 /////////////////////////////////////////////////////////////////////////////
-
-
-
 
 // Tapşırıq - 03;
 
@@ -57,12 +47,7 @@
 // console.log("Yeni yaş: " + person.age);
 // console.log("Qalan əmək haqqını hesablayın: " + person.getYearsBeforeRetirement());
 
-
-
-
 /////////////////////////////////////////////////////////////////////////////
-
-
 
 // Tapşırıq - 04;
 
