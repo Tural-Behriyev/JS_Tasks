@@ -74,3 +74,15 @@ debugger;
 // console.log("Vurma: " + kalkulyator.vurma(5, 3));
 // console.log("Bölmə: " + kalkulyator.bolme(10, 2));
 // console.log("Bölmə: " + kalkulyator.bolme(5, 0));
+
+
+
+
+
+
+
+
+
+
+
+

@@ -13,8 +13,6 @@
 // console.log(car2);
 // console.log(car3);
 
-
-
 //! Task2
 
 // const user1 = {
@@ -39,16 +37,12 @@
 // console.log(user1);
 // console.log(user2);
 
-
-
 //! Task3
 
 // let obj1 = { a: 1, b: 2 };
 // let obj2 = { b: 3, c: 4 };
 // let assignObj = Object.assign({}, obj1, obj2);
 // console.log(assignObj);
-
-
 
 //! Task5
 
@@ -63,34 +57,11 @@
 // propertyTaker({ country: "Sweden", continent: "Europe" }, "country");
 // propertyTaker({ name: "roma", age: 12 }, "name");
 
-
-
 //! Task6
 
 //**  JavaScript'də, "Stack" funksiyaların çağırılması və geri qayıdılması ilə məlumatları saxlayır, "Heap" isə dinamik olaraq yaradılan məlumatları saxlayır.
 
-
-
-
-
-
-
 //? Task4
 //? Task7
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
