@@ -9,6 +9,16 @@
 
 //////////////////////////////////////////////////////////////
 
+//?Task3
+
+// let arr = ["Yeni Ümid", "İmperiya geri qayıdır", "Jdi'nin qayıdışı"];
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(`Episode ${i + 4}: ${arr[i]}`);
+// }
+
+//////////////////////////////////////////////////////////////
+
 //?Task2
 
 // let myArray = ["Element1", "Element2", "Element3", "Element4"];
@@ -32,5 +42,7 @@
 // let text = "32, 31, 34, 36, 31";
 // let replacedText = text.split(", ").join(";");
 // console.log(replacedText);
+
+
 
 //////////////////////////////////////////////////////////////
