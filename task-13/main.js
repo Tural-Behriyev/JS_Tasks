@@ -53,3 +53,12 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 //?task3
+
+
+const boxes = document.querySelectorAll('.box');
+const colorInput = document.getElementById("colorInput");
+boxes.forEach(item => {
+    item.onclick = () => {
+        item.style.background = colorInput.value
+    }
+})
