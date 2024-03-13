@@ -90,19 +90,18 @@
 
 //!task3- Faktorial
 
-let btn = document.querySelector("button");
-
-btn.onclick = () => {
-  let numberInput = document.getElementById("numberInput").value;
-  let resultDisplay = document.getElementById("result");
-  if (numberInput === "") {
-    resultDisplay.innerText = "bir sayı daxil edin!";
-    return;
-  }
-  let number = parseInt(numberInput);
-  let factorial = 1;
-  for (let i = 2; i <= number; i++) {
-    factorial *= i;
-  }
-  resultDisplay.innerText = number + "! = " + factorial;
-};
+// let btn = document.querySelector("button");
+// btn.onclick = () => {
+//   let numberInput = document.getElementById("numberInput").value;
+//   let resultDisplay = document.getElementById("result");
+//   if (numberInput === "") {
+//     resultDisplay.innerText = "bir sayı daxil edin!";
+//     return;
+//   }
+//   let number = +numberInput;
+//   let factorial = 1;
+//   for (let i = 2; i <= number; i++) {
+//     factorial *= i;
+//   }
+//   resultDisplay.innerText = number + "! = " + factorial;
+// };
