@@ -587,9 +587,33 @@
 // const num = number.reduce((oldValue, currentValue, i) => oldValue + currentValue + i);
 // console.log(num);
 
+/////////////////////////////////////////////////////////////////////////////
+
+// const number = [1, 2, 3, 4, 5, 6, 7];
+// const set = new Set(number);
+// console.log(set);
 
 /////////////////////////////////////////////////////////////////////////////
 
-const number = [1, 2, 3, 4, 5, 6, 7];
-const set = new Set(number);
-console.log(set);
+// const fullStack = [
+//   ["HTML", "CSS", "JS", "React"],
+//   ["Node", "Express", "MongoDB"],
+// ];
+// const [fronted, backend] = fullStack;
+// console.log(fronted,backend);
+
+/////////////////////////////////////////////////////////////////////////////
+
+// const countries = [
+//   ["Finland", "Helsinki"],
+//   ["Sweden", "Stockholm"],
+//   ["Norway", "Oslo"],
+// ];
+// for (const [country, city] of countries) {
+//     console.log(country,city);
+// }
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+
