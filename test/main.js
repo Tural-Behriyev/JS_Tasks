@@ -613,7 +613,248 @@
 //     console.log(country,city);
 // }
 
+/////////////////////////////////////////////////////////////////////////////
+
+// const h1 = document.getElementsByTagName('h1');
+// [...h1].forEach(item => {
+//     console.log(item);
+// })
+
+// const h1 = document.querySelectorAll('h1');
+// [...h1].forEach(item => {
+//     console.log(item);
+// })
+
+// const h1 = document.getElementsByClassName("tagName");
+// [...h1].forEach(item => {
+//     console.log(item);
+// })
+
+// const h1 = document.getElementsByClassName("tagName");
+// const newh1 = [...h1];
+// newh1[1].className = "newClass";
+// newh1.forEach((item) => {
+//   console.log(item);
+// });
 
 /////////////////////////////////////////////////////////////////////////////
 
+// const btn = document.querySelector("button");
+// const div = document.querySelector('div');
+// const body = document.querySelector("body");
 
+// btn.onclick = () => {
+//     div.className.toggle("newClass");
+// }
+// btn.setAttribute('style','color: red');
+// btn.setAttribute("title", "test");
+
+/////////////////////////////////////////////////////////////////////////////
+
+// const h1 = document.querySelectorAll('h1');
+// console.log(typeof(h1));
+// h1.forEach((item,i) => {
+//     item.style.fontSize = '60px';
+//     if(i %2 === 0) {
+//         item.style.color = 'red'
+//     }
+//     else{
+//         item.style.color = 'green'
+//     }
+// })
+
+/////////////////////////////////////////////////////////////////////////////
+
+// let h1  = document.createElement('h1');
+// h1.className = "newClass";
+// h1.textContent = 'h1';
+// document.body.appendChild(h1)';
+
+/////////////////////////////////////////////////////////////////////////////
+
+// const btn = document.querySelector("button");
+// btn.addEventListener("click", (e) => {
+//   console.log(e);
+//   document.body.style.backgroundColor = "red";
+// });
+
+/////////////////////////////////////////////////////////////////////////////
+
+// const inp = document.querySelector("input");
+// inp.addEventListener("input", (e) => {
+//   console.log(e.target.value);
+// });
+
+/////////////////////////////////////////////////////////////////////////////
+
+// const btn = document.querySelector("button");
+// const attribute = btn.attributes;
+// [...attribute].forEach((attr, i) => {
+//   console.log(i, attr.name, attr.value);
+// });
+
+// for (const attr of attribute) {
+//     console.log(attr.name, attr.value);
+// }
+// console.log(atr.title.value);
+
+/////////////////////////////////////////////////////////////////////////////
+
+// const btn = document.querySelector("button");
+// const h1 = document.querySelectorAll("h1");
+
+// [...h1].forEach((item) => {
+//   item.addEventListener("click", (e) => {
+//     e.target.remove();
+//   });
+// });
+// btn.addEventListener("click", (e) => {
+//   [...h1].forEach((item) => {
+//     document.body.before(item);
+//   });
+// });
+
+/////////////////////////////////////////////////////////////////////////////
+
+// let sampleJson = `[
+//   {
+//     "name": "Tural",
+//     "surname": "Behriyev"
+//   },
+//   {
+//     "age": 24,
+//     "ageColor": "black"
+//   }
+// ]`;
+// let users = JSON.parse(sampleJson);
+// console.log(users);
+// console.log(sampleJson);
+// console.log(typeof(users));
+
+// let users = [
+//   {
+//     name: "john",
+//     surName: "doe",
+//     age: 244,
+//     color: "grey",
+//   },
+//   {
+//     name: "tural",
+//     surName: "bahriyev",
+//     age: 24,
+//     color: "black",
+//   },
+// ];
+// let usersJson = JSON.stringify(users);
+// console.log(usersJson);
+
+/////////////////////////////////////////////////////////////////////////////
+
+// const student = {
+//   firstName: "Asabeneh",
+//   lastName: "Yetayehe",
+//   age: 250,
+//   isMarried: true,
+//   skills: ["HTML", "CSS", "JS", "React", "Node", "Python"],
+// };
+// let studentJson = JSON.stringify({ firstName: student.firstName, lastName: student.lastName, skills: student.skills });
+// console.log(studentJson);
+
+/////////////////////////////////////////////////////////////////////////////
+
+// localStorage.setItem("name", "Tural");
+// localStorage.removeItem('name');
+// console.log(localStorage.key());
+
+/////////////////////////////////////////////////////////////////////////////
+
+// const student = {
+//   firstName: "Asabeneh",
+//   lastName: "Yetayehe",
+//   age: 250,
+//   isMarried: true,
+//   skills: ["HTML", "CSS", "JS", "React", "Node", "Python"],
+// };
+// localStorage.setItem("student", JSON.stringify(student));
+// console.log(JSON.parse(localStorage.getItem("user")));
+// localStorage.clear()
+
+/////////////////////////////////////////////////////////////////////////////
+
+//!products
+// const basket = JSON.parse(localStorage.getItem("basket")) || [];
+// const products = [
+//   {
+//     id: 1,
+//     title: "mackbook1",
+//     price: 123,
+//   },
+//   {
+//     id: 2,
+//     title: "mackbook2",
+//     price: 456,
+//   },
+//   {
+//     id: 3,
+//     title: "mackbook3",
+//     price: 789,
+//   },
+//   {
+//     id: 4,
+//     title: "mackbook4",
+//     price: 3756,
+//   },
+// ];
+// const addBasket = (productID) => {
+//   basket.push(productID);
+//   localStorage.setItem("basket", JSON.stringify(basket));
+// };
+// addBasket(2);
+// addBasket(4);
+// console.log(basket);
+// localStorage.removeItem('basket')
+
+/////////////////////////////////////////////////////////////////////////////
+
+// const btn = document.querySelector("button");
+// btn.onclick = () => {
+//   setTimeout(() => {
+//     document.body.style.backgroundColor = "red";
+//   }, 1000);
+// };
+
+/////////////////////////////////////////////////////////////////////////////
+
+// const btn = document.querySelector("button");
+// const p = document.getElementById("p");
+
+// let count = 0;
+// p.innerText = count;
+
+// const num = setInterval(() => {
+//   count++;
+//   p.innerText = count;
+//   if (count % 2 === 0) {
+//     document.body.style.backgroundColor = "red";
+//   } else {
+//     document.body.style.backgroundColor = "white";
+//   }
+//   if (count === 10) {
+//     clearInterval(num);
+//     document.body.style.backgroundColor = "white";
+//     console.log("Stop Time");
+//   }
+// }, 1000)
+
+/////////////////////////////////////////////////////////////////////////////
+
+// function updateClock() {
+//   const now = new Date();
+//   const hours = now.getHours().toString().padStart(2, "0");
+//   const minutes = now.getMinutes().toString().padStart(2, "0");
+//   const seconds = now.getSeconds().toString().padStart(2, "0");
+//   const time = `${hours}:${minutes}:${seconds}`;
+//   document.getElementById("clock").textContent = time;
+// }
+// setInterval(updateClock, 1000);
+// updateClock();
