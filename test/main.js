@@ -907,23 +907,63 @@
 
 /////////////////////////////////////////////////////////////////////////////
 
-const url = "https://jsonplaceholder.typicode.com/users";
-const cards = document.querySelector(".cards");
-const xhr = new XMLHttpRequest();
-xhr.open("GEt", url);
-xhr.onreadystatechange = () => {
-  if (xhr.readyState === 4) {
-    const data = JSON.parse(xhr.response);
-    data.forEach(({ name, username, email, phone }) => {
-      cards.innerHTML += `
-      <div class="card">
-            <h2>${name}</h2>
-            <h3>${username}</h3>
-            <p>${email}</p>
-            <p>${phone}</p>
-        </div>
-        `;
-    });
-  }
-};
-xhr.send();
+// const url = "https://jsonplaceholder.typicode.com/users";
+// const cards = document.querySelector(".cards");
+// const xhr = new XMLHttpRequest();
+// xhr.open("GEt", url);
+// xhr.onreadystatechange = () => {
+//   if (xhr.readyState === 4) {
+//     const data = JSON.parse(xhr.response);
+//     data.forEach(({ name, username, email, phone }) => {
+//       cards.innerHTML += `
+//       <div class="card">
+//             <h2>${name}</h2>
+//             <h3>${username}</h3>
+//             <p>${email}</p>
+//             <p>${phone}</p>
+//         </div>
+//         `;
+//     });
+//   }
+// };
+// xhr.send();
+
+/////////////////////////////////////////////////////////////////////////////
+
+// const url = "https://jsonplaceholder.typicode.com/users"; //endpoint
+// const response = fetch(url);
+// response.then((result) => {
+//   return result.json();
+// }).then((data) => {
+//   console.log(data);
+// });
+
+/////////////////////////////////////////////////////////////////////////////
+
+// const url = "https://dummyjson.com/products"; //endpoint
+// const cards = document.querySelector(".cards");
+
+// fetch(url)
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then(({ products }) => {
+//     products
+//       .forEach((product) => {
+//         cards.innerHTML += `<div class="card">
+//     <h3>${product.brand} ${product.title}</h3>
+//     <img src="${product.thumbnail}" alt="">
+// </div>`;
+//       })
+//       .catch(() => {
+//         console.log("error");
+//       });
+//   });
+
+/////////////////////////////////////////////////////////////////////////////
+
+const url = "https://dummyjson.com/products"; //endpoint
+const response = axios(url);
+response.then((result) => {
+  console.log(result);
+});
