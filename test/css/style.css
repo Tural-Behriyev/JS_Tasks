@@ -1,11 +1,11 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: 0;
-    outline: 0;
-    list-style-type: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+  list-style-type: none;
 }
 
 /* nav {
@@ -33,3 +33,14 @@ nav ul li a{
 nav ul li.active a{
     background-color: lime;
 } */
+
+.cards {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.card {
+  border: 1px solid black;
+  padding: 10px;
+}

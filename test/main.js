@@ -850,11 +850,80 @@
 
 // function updateClock() {
 //   const now = new Date();
-//   const hours = now.getHours().toString().padStart(2, "0");
-//   const minutes = now.getMinutes().toString().padStart(2, "0");
-//   const seconds = now.getSeconds().toString().padStart(2, "0");
+//   const hours = now.getHours().toString();
+//   const minutes = now.getMinutes().toString();
+//   const seconds = now.getSeconds().toString();
 //   const time = `${hours}:${minutes}:${seconds}`;
 //   document.getElementById("clock").textContent = time;
 // }
 // setInterval(updateClock, 1000);
 // updateClock();
+
+/////////////////////////////////////////////////////////////////////////////
+
+// class Person {
+//   constructor(_firstName, _lastname) {
+//     console.log(this);
+//     this.fistname = _firstName
+//     this.lastname = _lastname
+//   }
+// }
+// const person1 = new Person('john1', 'doe1');
+// const person2 = new Person("john2", "doe2");
+// const person3 = new Person("john3", "doe3");
+
+// console.log(person1);
+// console.log(person2);
+// console.log(person3);
+
+/////////////////////////////////////////////////////////////////////////////
+
+// const url = "https://jsonplaceholder.typicode.com/users";
+// const xhr = new XMLHttpRequest();
+// xhr.open("GET", url);
+// xhr.onreadystatechange = () => {
+//   if (xhr.readyState === 4) {
+//     console.log(xhr.responseText);
+//   }
+// };
+// xhr.send();
+
+/////////////////////////////////////////////////////////////////////////////
+
+// const url = "https://jsonplaceholder.typicode.com/users";
+// const userNames = document.getElementById("userNames");
+// const xhr = new XMLHttpRequest();
+// let users = [];
+// xhr.open("GET", url);
+// xhr.onreadystatechange = () => {
+//   if (xhr.readyState === 4) {
+//     const data = JSON.parse(xhr.responseText);
+//     data.forEach(({ email }) => {
+//       userNames.innerHTML += `<li>${email}</li>`;
+//     });
+//   }
+// };
+// xhr.send();
+
+/////////////////////////////////////////////////////////////////////////////
+
+const url = "https://jsonplaceholder.typicode.com/users";
+const cards = document.querySelector(".cards");
+const xhr = new XMLHttpRequest();
+xhr.open("GEt", url);
+xhr.onreadystatechange = () => {
+  if (xhr.readyState === 4) {
+    const data = JSON.parse(xhr.response);
+    data.forEach(({ name, username, email, phone }) => {
+      cards.innerHTML += `
+      <div class="card">
+            <h2>${name}</h2>
+            <h3>${username}</h3>
+            <p>${email}</p>
+            <p>${phone}</p>
+        </div>
+        `;
+    });
+  }
+};
+xhr.send();
