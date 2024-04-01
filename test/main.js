@@ -940,30 +940,25 @@
 
 /////////////////////////////////////////////////////////////////////////////
 
-// const url = "https://dummyjson.com/products"; //endpoint
-// const cards = document.querySelector(".cards");
-
-// fetch(url)
-//   .then((response) => {
-//     return response.json();
-//   })
-//   .then(({ products }) => {
-//     products
-//       .forEach((product) => {
-//         cards.innerHTML += `<div class="card">
-//     <h3>${product.brand} ${product.title}</h3>
-//     <img src="${product.thumbnail}" alt="">
-// </div>`;
-//       })
-//       .catch(() => {
-//         console.log("error");
-//       });
-//   });
+const url = "https://dummyjson.com/products"; //endpoint
+const cards = document.querySelector(".cards");
+fetch(url)
+  .then((response) => {
+    return response.json();
+  })
+  .then((products) => {
+    products.forEach(({ brand, title, thumbnail }) => {
+      cards.innerHTML += `<div class="card">
+    <h3>${brand} ${title}</h3>
+    <img src="${thumbnail}" alt="">
+</div>`;
+    });
+  });
 
 /////////////////////////////////////////////////////////////////////////////
 
-const url = "https://dummyjson.com/products"; //endpoint
-const response = axios(url);
-response.then((result) => {
-  console.log(result);
-});
+// const url = "https://dummyjson.com/products"; //endpoint
+// const response = axios(url);
+// response.then((result) => {
+//   console.log(result);
+// });
